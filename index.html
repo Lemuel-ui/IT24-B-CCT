@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        #chart-container {
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .loading {
+            font-size: 20px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Global Temperature Anomaly Over Time</h1>
+    <div id="chart-container">
+        <canvas id="tempChart"></canvas>
+    </div>
+    <div id="loading" class="loading">Loading data...</div>
+
+</body>
+</html>
