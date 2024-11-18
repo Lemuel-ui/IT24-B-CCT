@@ -1,0 +1,17 @@
+[
+    {
+        "latitude": 45.4215,
+        "longitude": -75.6972,
+        "message": "Parliament Hill"
+    },
+    {
+        "latitude": 45.4112,
+        "longitude": -75.6982,
+        "message": "ByWard Market"
+    },
+    {
+        "latitude": 45.4292,
+        "longitude": -75.6885,
+        "message": "Rideau Canal"
+    }
+]
