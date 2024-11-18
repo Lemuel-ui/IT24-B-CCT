@@ -12,17 +12,26 @@ class LeafletMap {
         }).addTo(this.map);
     }
 
-    addMarker(lat, lng, message) {
-        const marker = L.marker([lat, lng]).addTo(this.map);
-        marker.bindPopup(message);
+    convertTemperature(temperature, unit = 'C') {
+        if (unit === 'F') {
+            return (temperature * 9/5) + 32;
+        }
+        return temperature;
     }
 
-    loadMarkersFromJson(url) {
+    addMarker(lat, lng, message, temperature, unit = 'C') {
+        const marker = L.marker([lat, lng]).addTo(this.map);
+        const tempInPreferredUnit = this.convertTemperature(temperature, unit);
+        const popupMessage = `${message}<br>Temperature: ${tempInPreferredUnit}°${unit}`;
+        marker.bindPopup(popupMessage);
+    }
+
+    loadMarkersFromJson(url, unit = 'C') {
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 data.forEach(marker => {
-                    this.addMarker(marker.latitude, marker.longitude, marker.message);
+                    this.addMarker(marker.latitude, marker.longitude, marker.message, marker.temperature, unit);
                 });
             })
             .catch(error => console.error('Error loading markers:', error));
@@ -30,4 +39,4 @@ class LeafletMap {
 }
 
 const myMap = new LeafletMap('map', [45.4215, -75.6972], 5);
-myMap.loadMarkersFromJson('app.json');
+myMap.loadMarkersFromJson('app.json', 'F');
