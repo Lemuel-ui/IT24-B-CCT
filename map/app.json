@@ -1,14 +1,20 @@
 [
-    {
-      "latitude": 45.4215,
-      "longitude": -75.6972,
-      "message": "Ottawa",
-      "temperature": 12
-    },
-    {
-      "latitude": 51.5074,
-      "longitude": -0.1278,
-      "message": "London",
-      "temperature": 15
-    }
-  ]  
+  {
+    "message": "Dicklum",
+    "temperature": 29,
+    "latitude": 8.363520408450357,
+    "longitude": 124.84924962132088
+  },
+  {
+    "message": "Dalirig",
+    "temperature": 30,
+    "latitude": 8.375165491142885,
+    "longitude": 124.90728108631774
+  },
+  {
+    "message": "Alae",
+    "temperature": 32,
+    "latitude": 8.41110459260254,
+    "longitude": 124.81209731434558
+  }
+]
