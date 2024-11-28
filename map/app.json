@@ -1,20 +1,38 @@
 [
   {
-    "message": "Dicklum",
+    "message": "Manolo Fortich -Dicklum",
     "temperature": 29,
     "latitude": 8.363520408450357,
     "longitude": 124.84924962132088
   },
   {
-    "message": "Dalirig",
+    "message": "Manolo Fortich -Dalirig",
     "temperature": 30,
     "latitude": 8.375165491142885,
     "longitude": 124.90728108631774
   },
   {
-    "message": "Alae",
+    "message": "Manolo Fortich -Alae",
     "temperature": 32,
     "latitude": 8.41110459260254,
     "longitude": 124.81209731434558
+  },
+  {
+    "message": "Manolo Fortich - Tankulan",
+    "temperature": 28,
+    "latitude": 8.3592,
+    "longitude": 124.8679
+  },
+  {
+    "message": "Manolo Fortich - San miguel",
+    "temperature": 29,
+    "latitude": 8.3811,
+    "longitude": 124.8348
+  },
+  {
+    "message": "Manolo Fortich - Sankanan",
+    "temperature": 27,
+    "latitude": 8.3283,
+    "longitude": 124.8514
   }
 ]

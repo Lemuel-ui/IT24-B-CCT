@@ -36,7 +36,7 @@ class LeafletMap {
                     this.addMarker(marker.latitude, marker.longitude, marker.message, marker.temperature, unit);
                 });
             })
-            .catch(error => console.error('Error loading markers:', error));  // Handle any errors in loading
+            .catch(error => console.error('Error loading markers:', error));
     }
 }
 
